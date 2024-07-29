@@ -15,9 +15,13 @@
 .navbar{
     position: fixed;
     width: 100%;
-    padding: 30px 0;
-    /* background: rgb(53, 104, 73); */
+    padding: 30px 0; 
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 30px 0;
+    background: green;
 }
 .navbar .max-width {
     display: flex;
@@ -29,9 +33,14 @@
     color: #fff;
     font-size: 35px; 
     font-weight: 600;
+
 }
 .navbar .logo a span{
-    color: crimson;
+    color: green;
+    transition: all 0.3s ease;
+}
+.navbar.sticky  .logo a span{
+    color: #fff;
 }
 .navbar .menu li {
     list-style: none;
@@ -45,8 +54,13 @@
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: green;
 }
+.navbar.sticky  .menu li a:hover{
+    color: #fff;
+}
+
+
 .home {
     display: flex;
     background: url("images/banner.jpg") no-repeat center ;
@@ -76,7 +90,7 @@
     margin-left: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    color: green;
     font-weight: 500;
 };
 
