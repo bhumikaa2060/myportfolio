@@ -100,15 +100,88 @@
     color: green;
     font-weight: 500;
 };
+.home .home-content a{
+    display: inline-block;
+    background: green;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid green;
+    transition: all 0.3s ease;
+}
 
-/* responsive mediaquery start */
+.home .home-content a:hover{
+    color: #fff;
+    background: none;
+}
+/* 
+about section style */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: #111;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+ }
 
-@media (max-width: 947px){
-    
-    .max-width {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media query start */
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 991px) {
+    .max-width{
         padding: 0 50px;
     }
-    .menu-btn{ 
+}
+@media (max-width: 947px){
+    .menu-btn{
         display: block;
         z-index: 999;
     }
@@ -121,9 +194,10 @@
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111; 
-        padding-top: 80px;   
-        transition: all 0.3s ease;    
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
     }
     .navbar .menu.active{
         left: 0;
@@ -136,5 +210,42 @@
         margin: 20px 0;
         font-size: 25px;
     }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+   .max-width{
+        max-width: 930px;
+    }
+   
 }
-
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    
+}
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    
+}
