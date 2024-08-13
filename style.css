@@ -9,6 +9,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
@@ -101,7 +102,7 @@ html{
 
 .home {
     display: flex;
-    background: url("images/banner2.jpg") no-repeat center ;
+    background: url("images/banner.png") no-repeat center ;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -148,6 +149,10 @@ html{
     color: #fff;
     background: none;
 }
+
+
+
+
 /* section code  */
 section{
     padding: 100px 0;
